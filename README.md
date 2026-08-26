@@ -1,2 +1,55 @@
-# my-awesome-website
-A modern, responsive website created with HTML, CSS, and JavaScript
+# 실시간 주식 게임 플랫폼
+
+사용자들이 가상의 주식을 만들고, 매매하며, 실시간으로 경쟁하는 게임 플랫폼입니다.
+
+## 주요 기능
+
+### 사용자 관리
+- 회원가입 / 로그인
+- JWT 기반 인증
+- 사용자 프로필 및 자산 관리
+
+### 주식 기능
+- **주식 생성**: 사용자가 새로운 주식을 상장
+  - 성공 시: 수익금 획득
+  - 실패 시: 손실 발생
+- **주식 거래**: 다른 사용자들과 실시간 매매
+- **주식 상장폐지**: 상장폐지 수수료 (원가의 2배)
+
+### 실시간 기능
+- WebSocket을 통한 실시간 주식 가격 업데이트
+- 실시간 랭킹 시스템 (자산 기준)
+- 거래 알림
+
+### 게임 메커니즘
+- 초기 자본금: 1,000,000 원
+- 주식 가격은 수요/공급에 따라 변동
+- 랭킹: 현재 보유 자산 기준
+
+## 기술 스택
+
+### 백엔드
+- Node.js + Express
+- MongoDB
+- Socket.io (WebSocket)
+- JWT (인증)
+- Bcrypt (비밀번호 암호화)
+
+### 프론트엔드
+- React
+- Socket.io-client
+- Axios
+- Tailwind CSS
+
+## 디렉토리 구조
+
+```
+my-awesome-website/
+├── backend/          # Node.js + Express 서버
+├── frontend/         # React 앱
+└── README.md
+```
+
+## 설치 및 실행
+
+자세한 내용은 각 디렉토리의 README를 참고하세요.
